@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background: white;
+}
+
+.container {
+    margin: 10em 20em;
+    display: inline-flex;
+    justify-content: center;
+    /* padding: 12em 7em; */
+}
+
+.box {
+    display: inline;
+    margin: 0;
+    padding: 5%;
+    width: 30%;
+}
+
+.att1 {
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    background: var(--Bright-orange);
+}
+
+.att2 {
+    background: var(--Dark-cyan);
+}
+
+.att3 {
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    background: var(--Very-dark-cyan);
+}
+
+h1 {
+    color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+ul {
+    color: var(--Transparent-white);
+    margin-bottom: 6em;
+    text-align: left;
+    padding: 0;
+}
+
+.btn {
+    background: var(--Very-light-gray);
+    border-radius: 2em;
+    width: 50%;
+    padding: 1em 0.5em;
+    margin: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3em 2em;
+        /* padding: 2em; */
+    }
+    .box {
+        /* width: fit-content; */
+        border-radius: 0 !important;
+        width: 80%;
+        padding: 3.5em 2.5em;
+    }
+    .att1 {
+        border-top-left-radius: 1em !important;
+        border-top-right-radius: 1em !important;
+    }
+    .att3 {
+        border-bottom-right-radius: 1em !important;
+        border-bottom-left-radius: 1em !important;
+    }
+    ul {
+        margin-bottom: 3em;
+        text-align: left;
+        margin-right: 2.5em;
+    }
+}
